@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{margin:0;padding:0}
+      body{
+        background-image:url("bg.jpeg");
+        width:100vw;
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+      }
+      .wrapper{
+        width:50vw;
+        height:50vh;
+        background:rgba(0,0,0,0.7);
+        border-radius:10px;
+        display:flex;
+        justify-content:center;
+        align-content:center;
+        flex-direction:column;
+        align-items:center;
+      }
+      .timer{
+        width:100%;
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        margin-top:10vh;
+      }
+      .timer div{
+        width:8vw;
+        height:10vh;
+        background:rgba(255,255,255,0.8);
+          font-size:3rem;
+          text-align:center;
+          line-height:10vh;
+          color:#59a7c6;
+          font-weight:bold;
+      }
+      .timer span{
+        color:white;
+        font-size:2rem;
+      }
+      .start, .pause{
+        width:100%;
+        height:5vh;
+        text-align:center;
+      }
+      button{
+        background:#59a7c6;
+        border:0;
+        padding:2vh 2vw;
+        border-radius:5px;
+        cursor:pointer;
+        color:white;
+        font-size:1.5rem;
+      }
+      .buttons{
+        width:25vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+
+        <div class="wrapper">
+          <div class="buttons">
+            <div class="start"><button>START</button></div>
+            <div class="pause"><button>PAUSE</button></div>
+          </div>
+          <div class="timer">
+            <div class="minute">1</div> <span>Minutes</span>
+            <div class="second">40</div> <span>Seconds</span>
+          </div>
+        </div>
+<script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
